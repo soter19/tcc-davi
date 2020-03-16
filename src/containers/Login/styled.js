@@ -1,0 +1,19 @@
+import styled from 'styled-components'
+import { Grid } from '@material-ui/core'
+
+export const StyledGrid = styled(Grid)`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`
+
+export const EduzzImage = styled.img`
+  padding: 2rem;
+  box-sizing: border-box;
+  height: 8rem;
+  @media only screen and (max-width: 599.8px) {
+    display: none;
+  }
+`
+
+
