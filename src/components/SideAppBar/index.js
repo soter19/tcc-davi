@@ -15,7 +15,7 @@ import {
 } from '@material-ui/core'
 import DashboardIcon from '@material-ui/icons/Dashboard'
 import PersonIcon from '@material-ui/icons/Person'
-import EduzzLogo from '../../assets/logo-white.png'
+import Future4Logo from '../../assets/logoFuture4branco.png'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
 
 
@@ -33,8 +33,8 @@ export default function SideAppBar(props){
  
   return(
     <Wrapper>
-      <Menu>
-        <StyledImg src={EduzzLogo} alt="Logo" />
+      <Menu square>
+        <StyledImg src={Future4Logo} alt="Logo" />
         <UserInfoSection>
           <Typography >
             Hello, user

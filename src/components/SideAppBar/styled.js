@@ -1,20 +1,23 @@
 import styled from 'styled-components'
-import { List } from '@material-ui/core'
-import { theme } from '../../assets/muitheme'
+import { List, Paper } from '@material-ui/core'
+import { theme, complementaryColors } from '../../assets/muitheme'
 
 const primaryColor = theme.palette.primary 
+
+const darkGrey = complementaryColors.darkGrey
 
 export const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr 7fr;
 `
 
-export const Menu = styled.div`
-  background: ${primaryColor.dark};
+export const Menu = styled(Paper)`
+  background: ${darkGrey};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: ${theme.palette.secondary.contrastText};
 `
 
 export const StyledList = styled(List)`

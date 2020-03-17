@@ -2,11 +2,13 @@ import React, {Component} from 'react'
 import PageWrapper from '../../components/PageWrapper'
 import AuthFormGenerator from '../../components/AuthForms'
 import signupForm from '../../components/AuthForms/signupForm'
-import { StyledGrid } from './styled'
+import { StyledGrid, OuterFuture4ProfileImg } from './styled'
 import { connect } from 'react-redux'
 import { push } from 'connected-react-router'
 import { routes } from '../Router'
 import { signup } from '../../actions/auth'
+import Future4Profile from '../../assets/PerfilFuture4.png'
+
 
 
 class Signup extends Component {
@@ -42,6 +44,7 @@ class Signup extends Component {
     return(
       <PageWrapper>
         <StyledGrid container justify="center" alignItems="center">
+          <OuterFuture4ProfileImg src={Future4Profile} alt="Future4 logo" />
           <AuthFormGenerator
             formMapper={form}
             formMapValue={form.state}

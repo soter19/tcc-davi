@@ -7,10 +7,11 @@ import {
   ButtonIcon, 
   HeaderWrapper,
   FooterWrapper,
-  StyledLink 
+  StyledLink,
+  InnerFuture4ProfileImg 
 } from './styled'
 import { CardHeader } from '@material-ui/core'
-
+import Future4Profile from '../../assets/PerfilFuture4.png'
 
 const AuthFormGenerator = (props) => { 
 
@@ -84,6 +85,7 @@ const AuthFormGenerator = (props) => {
           {footerRouterLeft}
           {footerRouterRight}
         </FooterWrapper>
+        <InnerFuture4ProfileImg src={Future4Profile} alt="Future4 logo"/>
       </StyledFormControl>
     </StyledCard>
   )

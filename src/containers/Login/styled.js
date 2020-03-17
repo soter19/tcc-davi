@@ -7,10 +7,10 @@ export const StyledGrid = styled(Grid)`
   flex-direction: column;
 `
 
-export const EduzzImage = styled.img`
+export const OuterFuture4ProfileImg = styled.img`
   padding: 2rem;
   box-sizing: border-box;
-  height: 8rem;
+  height: 10rem;
   @media only screen and (max-width: 599.8px) {
     display: none;
   }

@@ -2,11 +2,11 @@ import React, {Component} from 'react'
 import PageWrapper from '../../components/PageWrapper'
 import AuthFormGenerator from '../../components/AuthForms'
 import loginForm from '../../components/AuthForms/loginForm'
-import { StyledGrid, EduzzImage } from './styled'
+import { StyledGrid, OuterFuture4ProfileImg, InnerFuture4ProfileImg } from './styled'
 import { connect } from 'react-redux'
 import { push } from 'connected-react-router'
 import { routes } from '../Router'
-import EduzzLogo from '../../assets/logo-black.svg'
+import Future4Profile from '../../assets/PerfilFuture4.png'
 import {login} from '../../actions/auth'
 
 
@@ -42,7 +42,7 @@ class Login extends Component {
     return(
       <PageWrapper>
         <StyledGrid container justify="center" alignItems="center">
-          <EduzzImage src={EduzzLogo} alt="EduzzLogo" />
+          <OuterFuture4ProfileImg src={Future4Profile} alt="Future4 logo" />
           <AuthFormGenerator
             formMapper={form}
             formMapValue={form.state}

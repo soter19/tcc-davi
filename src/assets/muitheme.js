@@ -1,32 +1,23 @@
 import { createMuiTheme } from "@material-ui/core"
 
 export const theme = {
-  overrides: {
-    MuiIconButton: {
-      colorPrimary: {
-        color: 'white'
-      }
-    },
-    MuiListItemIcon: {
-      root: {
-        color: 'white'
-      }
-    }
-  },
   palette: {
     primary: {
-      main: '#002f58',
-      light: '#3a5885',
-      dark: '#00274A',
-      contrastText: '#fff',
+      main: "#F37E2C",
+      contrastText: "#000000"
     },
     secondary: {
-      main: "#ffcc09",
-      light: '#ffff53',
-      dark: '#c79c00',
-      contrastText: "#fff",
+      main: "#45778C",
+      light: "#ABCBD9",
+      dark: "#2C4C59",
+      contrastText: "#FFFFFF"
     }
   }
+}
+
+export const complementaryColors = {
+  darkGrey: "#323C40",
+  
 }
 
 export default createMuiTheme(theme)

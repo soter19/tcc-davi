@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { Card, TextField, FormControl, Button } from '@material-ui/core'
 
-
 export const StyledFormControl = styled(FormControl)`
   width: 100%;
   display: flex;
@@ -69,7 +68,6 @@ export const HeaderWrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-grow: 1;
-  color: #1E527E;
 `
 
 export const FooterWrapper = styled.div`
@@ -85,5 +83,15 @@ export const StyledLink = styled.span`
   :hover{
     cursor: pointer;
   }
-  color: #1E527E;
+`
+
+export const InnerFuture4ProfileImg = styled.img`
+  padding: 2rem;
+  box-sizing: border-box;
+  height: 5rem;
+  display: none;
+  @media only screen and (max-width: 599.8px) {
+    display: block;
+    height: 50%;
+  }
 `

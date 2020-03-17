@@ -3,8 +3,8 @@ import {
   ChartWrapper,
   Chart 
 } from './styled'
-import { CardContent, Typography } from '@material-ui/core'
-import { ResponsiveContainer, BarChart, Tooltip, Bar, XAxis, YAxis, LineChart, Line, Area, CartesianGrid, ComposedChart, Legend } from 'recharts'
+import { CardContent, Typography, CardActions, Button } from '@material-ui/core'
+import { ResponsiveContainer, BarChart, Tooltip, Bar, XAxis, YAxis, Area, CartesianGrid, ComposedChart, Legend } from 'recharts'
 import {history} from './test'
 
 
@@ -46,6 +46,9 @@ export default function Charts(props){
     }
   ]);
 
+  const value = 100
+  const bought = 401020514741655900
+  const sold = 349971.7706961
   return(
     <ChartWrapper >
       <Chart variant="outlined">
@@ -53,6 +56,15 @@ export default function Charts(props){
           <Typography gutterBottom>
             Balance
           </Typography>
+
+          <Typography align="justify" display="inline">
+            You have R${value.toFixed(2)} in your account.
+          </Typography>
+          <CardActions>
+            <Button size="small" variant="outlined">
+              Learn more
+            </Button>
+          </CardActions>
         </CardContent>
       </Chart>
 
@@ -60,6 +72,12 @@ export default function Charts(props){
         <CardContent>
           <Typography gutterBottom>
             Price
+          </Typography>
+          
+          <Typography>
+            Buy: R${value.toFixed(2)}
+            <br />
+            Sell: R${value.toFixed(2)}
           </Typography>
         </CardContent>
       </Chart>
@@ -70,7 +88,9 @@ export default function Charts(props){
             Volume
           </Typography>
           <Typography>
-            Today, 
+            Bought: R${bought.toFixed(2)} 
+            <br />
+            Sold: R${sold.toFixed(2)}
           </Typography>
         </CardContent>
       </Chart>
